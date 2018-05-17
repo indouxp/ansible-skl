@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: chk-sha256sum.sh ファイルハッシュの確認
+      copy:
+        src: ../files/chk-sha256sum.sh
+        dest: /root/kvm/chk-sha256sum.sh
+        mode: 0755
