@@ -2,7 +2,7 @@
 - hosts: all
 
   tasks:
-    - name: group
+    - name: group - Add or remove groups <<http://docs.ansible.com/ansible/latest/modules/group_module.html>>
       group: 
         name: "{{ item.name }}"
         gid: "{{ item.gid }}"
