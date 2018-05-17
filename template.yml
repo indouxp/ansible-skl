@@ -9,7 +9,7 @@
     gdb: orcl
 
   tasks:
-    - name: setup listener.ora
+    - name: template - Templates a file out to a remote server <<http://docs.ansible.com/ansible/latest/modules/template_module.html>>
       template:
         src: ../files/listener.j2
         dest: /u01/app/oracle/product/12.2.0/db_1/network/admin/listener.ora
