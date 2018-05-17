@@ -3,7 +3,7 @@
 - hosts: all
 
   tasks:
-    - name: yum group-install
+    - name: yum group-install <<http://docs.ansible.com/ansible/latest/modules/yum_module.html>>
       yum: name="{{ item }}" state=present
       with_items:
         - "@Virtualization Client"
