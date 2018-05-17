@@ -3,7 +3,7 @@
 - hosts: all
 
   tasks:
-    - name: mkdir /u01/app/oraInventory
+    - name: file - Sets attributes of files <<http://docs.ansible.com/ansible/latest/modules/file_module.html#author>>
       file:
         dest: /u01/app/oraInventory
         state: directory
