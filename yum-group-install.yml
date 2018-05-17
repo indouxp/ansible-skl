@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: yum group-install
+      yum: name="{{ item }}" state=present
+      with_items:
+        - "@Virtualization Client"
+        - "@Virtualization Platform"
+        - "@Virtualization Tools"
+        - "@^gnome-desktop-environment"
