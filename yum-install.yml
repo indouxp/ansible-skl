@@ -3,7 +3,7 @@
 - hosts: all
 
   tasks:
-    - name: yum install tigervnc-server
+    - name: yum - Manages packages with the yum package manager <<http://docs.ansible.com/ansible/latest/modules/yum_module.html>>
       yum: name=tigervnc-server state=latest
     - name: yum install curl
       yum: name=curl state=latest
