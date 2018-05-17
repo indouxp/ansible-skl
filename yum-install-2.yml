@@ -2,7 +2,7 @@
 - hosts: all
 
   tasks:
-    - name: yum install 
+    - name: yum - Manages packages with the yum package manager <<http://docs.ansible.com/ansible/latest/modules/yum_module.html>>
       yum: name={{ item }} state=present
       with_items:
         - binutils
