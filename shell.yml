@@ -3,7 +3,7 @@
 - hosts: all
 
   tasks:
-    - name: brctl show                        仮想ブリッジの確認
+    - name: shell - Execute commands in nodes. <<http://docs.ansible.com/ansible/latest/modules/shell_module.html>>
       shell: brctl show | grep "^br0"
       ignore_error: True
       register: brctl_show
