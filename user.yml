@@ -2,7 +2,7 @@
 - hosts: all
 
   tasks:
-    - name: user
+    - name: user - Manage user accounts <<http://docs.ansible.com/ansible/latest/modules/user_module.html>>
       user:
         name: oracle
         uid: 54321
